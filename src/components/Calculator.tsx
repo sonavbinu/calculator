@@ -25,6 +25,8 @@ const Calculator: React.FC = () => {
   return (
     <div>
       <div className="calci-main">
+        <h1>Calculator</h1>
+
         <div className="calci-container">
           <div className="display">{input || '0'}</div>
         </div>

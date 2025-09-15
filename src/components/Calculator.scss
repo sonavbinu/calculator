@@ -1,35 +1,40 @@
 .calci-main {
   border: 1px solid black;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  width: 272px;
-  height: 420px;
-  background-color: rgb(27, 25, 48);
+  border-radius: 30px;
+  width: 314px;
+  height: 700px;
+  background-color: black;
   font-family: cursive;
+  gap: 20px;
   border: none;
-  box-shadow: 3px 3px 10px rgba(221, 160, 221, 0.349);
+  box-shadow: 3px 3px 3px 5px rgb(58, 161, 255, 0.5);
+  h1 {
+    color: #3aa1ff;
+  }
 
   .calci-container {
     border: 1px solid rgb(27, 25, 48);
-    border-radius: 20px 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: end;
-    color: white;
-    height: 16%;
+    background-color: white;
+    color: black;
+    height: 290px;
     padding: 10px;
     font-size: 30px;
-    width: 92%;
+    width: 250px;
   }
 
   .calci-body {
     display: flex;
     border: none;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     font-size: 30px;
     // border: 1px solid black;
     width: 92%;
@@ -41,24 +46,24 @@
     margin-left: 20px;
     font-size: 20px;
     padding: 10px;
-    margin-top: 3px;
     border-radius: 80%;
     cursor: pointer;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.371);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.371);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 50px;
     color: white;
-    background-color: rgb(27, 25, 48);
+    background-color: #616161;
     font-family: cursive;
     text-align: center;
     transition: all 0.3s ease;
   }
   button.purple {
-    background-color: rgb(187, 121, 249);
+    background-color: #616161;
+    color: #3aa1ff;
   }
   button:hover {
     transform: translateY(2px);
-    box-shadow: 2px 2px 10px rgb(187, 121, 249);
+    box-shadow: 2px 2px 10px #3aa1ff;
   }
 }

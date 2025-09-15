@@ -1,10 +1,10 @@
 import React from 'react';
 import Calculator from './components/Calculator';
+import './App.scss';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Simple Calculator</h1>
+    <div className="App">
       <Calculator />
     </div>
   );
