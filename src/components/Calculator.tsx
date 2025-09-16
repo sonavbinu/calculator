@@ -14,8 +14,10 @@ const Calculator: React.FC = () => {
 
   const calculate = () => {
     try {
-      const expression = input.replace(/x/g, '*').replace(/÷/g, '/');
-
+      const expression = input
+        .replace(/x/g, '*')
+        .replace(/÷/g, '/')
+        .replace(/%/g, '/100');
       const result = eval(expression);
       setInput(result.toString());
     } catch (error) {
@@ -25,8 +27,6 @@ const Calculator: React.FC = () => {
   return (
     <div>
       <div className="calci-main">
-        <h1>Calculator</h1>
-
         <div className="calci-container">
           <div className="display">{input || '0'}</div>
         </div>
@@ -34,6 +34,7 @@ const Calculator: React.FC = () => {
           <div>
             <button onClick={clear}>C</button>
             <button onClick={() => setInput(input.slice(0, -1))}>CE</button>
+            <button onClick={() => handleClick('%')}>%</button>
             <button className="purple" onClick={() => handleClick('÷')}>
               &divide;
             </button>
@@ -63,6 +64,7 @@ const Calculator: React.FC = () => {
             </button>
           </div>
           <div>
+            <button onClick={() => handleClick('00')}>00</button>
             <button onClick={() => handleClick('0')}>0</button>
             <button onClick={() => handleClick('.')}>.</button>
             <button className="purple" onClick={() => calculate()}>

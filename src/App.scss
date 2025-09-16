@@ -1,5 +1,11 @@
 .App {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color: rgb(182, 130, 238);
+  font-size: 20px;
+  font-family: cursive;
+  gap: 20px;
+  text-align: center;
 }
